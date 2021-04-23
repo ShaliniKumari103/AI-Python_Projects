@@ -1,0 +1,14 @@
+## text to speech in python
+! pip install gTTS
+# import the module
+from gtts import gTTS
+#text Data
+text="Hi my name is Shalini. I am a second year btech student"
+text
+language='en'
+# passing the text data
+myobj=gTTS(text=text,lang=language,slow=False)
+myobj.save("ttSdemo.mp3")
+pwd
+import os
+os.system("ttSdemo.mp3")
